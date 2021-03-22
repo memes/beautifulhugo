@@ -36,7 +36,6 @@
             {{ else }}
               {{ .Site.Author.name }}
             {{ end }}
-            &nbsp;&bull;&nbsp;
           {{ end }}
 
           &nbsp;&bull;&nbsp;&copy;
@@ -49,10 +48,6 @@
           {{ if .Site.Title }}
             &nbsp;&bull;&nbsp;
             <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a>
-          {{ end }}
-          {{ with .Params.license | default .Site.Params.license }}
-            <br/>
-            {{ . | markdownify }}
           {{ end }}
         </p>
         <!-- Please don't remove this, keep my open source work credited :) -->
